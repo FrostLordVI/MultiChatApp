@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./chat.css">
+</head>
+<body>
+    <header><h1>Multi Chat App</h1></header>
+    <main>
+        <div id="newUser">
+           <div class="nickAndMessage">
+            <h3>Nick:</h3>
+            <input placeholder="Your nick..." id="nick">
+           </div>
+           <div class="nickAndMessage">
+            <h3>Message:</h3>
+            <textarea placeholder="Your message..." id="message"></textarea>
+           </div>
+           <button id="send">Send</button> 
+            
+        </div>
+        <div id="board">
+            <div class="userBoard">
+            <h2 class="nickName" id="nick1">Gimli</h2>
+            <p class="message" id="message1">I have killed 18 orcs!</p>
+            <p class="date">2021-03-02</p>
+            <hr>
+        </div>
+        
+            <div class="userBoard">
+                <h2 class="nickName" id="nick2">Legolas</h2>
+                <p class="message" id="message2">And i killed 50!</p>
+                <p class="date">2021-03-22</p>
+                <hr>
+            </div>
+
+            <div class="userBoard">
+                <h2 class="nickName" id="nick3">Gimli</h2>
+                <p class="message" id="message3">I will not be defeated by an elf! -.-"</p>
+                <p class="date">2021-04-12</p>
+                <hr>
+            </div>   
+        </div>
+        
+    </main>
+    <footer>
+        <h4>copyright &copy; 2023</h4>
+        <button id="reset">RESET</button>
+    </footer>
+    <script src="./chat.js"></script>
+</body>
+</html>
